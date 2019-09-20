@@ -8,7 +8,7 @@ const pageQuery = `{
         edges {
             node {
                 objectID: id
-                frontmtter {
+                frontmatter {
                     title
                     slug
                 }
@@ -55,4 +55,4 @@ const queries = [
         settings,
     },
 ]
-modules.exports = queries
+module.exports = queries
