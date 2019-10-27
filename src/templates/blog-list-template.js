@@ -2,7 +2,8 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/SEO"
-import "../scss/main.scss"
+// import "../scss/main.scss"
+import App from "../App"
 import styles from "../scss/blog.module.scss"
 
 export default class BlogList extends React.Component {
@@ -17,7 +18,7 @@ export default class BlogList extends React.Component {
     const nextPage = "blog/" + (currentPage + 1).toString()
 
     return (
-      <Layout>
+      <App>
         <Seo
           title="All blog posts"
           description="Recent posts from the Bonneville starter theme"
@@ -57,7 +58,7 @@ export default class BlogList extends React.Component {
             </Link>
           )}
         </div>
-      </Layout>
+      </App>
     )
   }
 }

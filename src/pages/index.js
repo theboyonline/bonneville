@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
+import App from "../App"
 import styles from "../scss/blog.module.scss"
 import Seo from "../components/SEO"
 
@@ -8,7 +9,7 @@ export default ({ data }) => {
   console.log(data)
 
   return (
-    <Layout>
+    <App>
       <Seo />
       <h1>
         My name is Bonneville. I'm a starter theme for Gatsby and I like to talk
@@ -35,7 +36,7 @@ export default ({ data }) => {
           </div>
         </article>
       ))}
-    </Layout>
+    </App>
   )
 }
 
